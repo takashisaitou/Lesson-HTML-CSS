@@ -262,7 +262,7 @@ a:hover { color: #996600; }
 	margin-bottom: 30px;
 }
 
-#pageBodyMain .articleList {
+#pageBodyMain .articleList a {
 	display: block;
 	padding: 10px;
 	color: inherit;
