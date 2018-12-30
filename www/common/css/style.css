@@ -265,4 +265,6 @@ a:hover { color: #996600; }
 #pageBodyMain .articleList {
 	display: block;
 	padding: 10px;
+	color: inherit;
+	text-decoration: none;
 }
