@@ -363,6 +363,72 @@ a:hover { color: #996600; }
 	margin-bottom: 0;
 }
 
+/* 「つくったもの」INDEX */
+#pageBody .portfolioIndex {
+	margin-top: 40px;
+}
+
+#pageBody .portfolioIndex:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#pageBody .portfolioIndex article {
+	width: 300px;
+	float: left;
+	margin-left: 40px;
+}
+
+#pageBody .portfolioIndex article:first-child {
+	margin: 0;
+}
+
+#pageBody .portfolioIndex article h2 {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+#pageBody .portfolioIndex article p {
+	margin-top: 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* おしらせ */
+#pageBody .news {
+	margin-top: 40px;
+}
+
+#pageBody .news h1 {
+	font-size: 20px;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 5px 0;
+}
+
+#pageBody .news table {
+	width: 100%;
+}
+
+#pageBody .news table tr th,
+#pageBody .news table tr td {
+	font-size: 14px;
+	line-height: 1.429;
+	border-bottom: 1px dotted #CCCCCC;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#pageBody .news table tr th {
+	white-space: nowrap;
+	padding-right: 30px;
+}
+
+#pageBody .news table tr td {
+	width: 100%;
+}
+
+
 #pageBodyMain .articleList a:after {
 	content: "";
 	clear: both;
