@@ -6,6 +6,21 @@
 <meta name="description" content="komorikomashaは、コモモ・モリコ・ひろましゃ３人のメンバーが勢いでつくったものや活動を紹介しているサイトです">
 <link rel="stylesheet" href="common/css/normalize.css">
 <link rel="stylesheet" href="common/css/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.slider').bxSlider({
+				auto: true,
+				speed: 1000,
+				pause: 4000,
+		});
+	});
+</script>
+
 </head>
 <body>
 
@@ -26,12 +41,31 @@
 
 <div id="pageBody">
 	<section class="mainVisual">
-			<div class="mainVisualText">
-				<h1>Cafe Debut</h1>
-				<p>baserCMS、カフィサイト用テーマ<br>
-				baserCMS2012 テーマコンテスト 飲食店系テーマ賞受賞</p>
-			</div>
-			<img src="images/mainVisual_img_01.jpg" width="980" height="500" alt="">
+		<ul class="slider">
+			<li>
+				<div class="mainVisualText">
+					<h1>バッタになりたい魔法使い</h1>
+					<p>コモモ・ひろましゃ制作のWeb仕掛け絵本<br>
+					合い言葉は、バッタになっちゃえ！</p>
+				</div>
+				<img src="images/mainVisual_img_03.jpg" width="980" height="500" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>WordPress<br>デザインワークブック</h1>
+					<p>コモモとひろましゃ二人の共著によるWordPressで本格的なウェブサイトを制作したい方向けの書籍</p>
+				</div>
+				<img src="images/mainVisual_img_02.jpg" width="980" height="500" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>Cafe Debut</h1>
+					<p>baserCMS、カフィサイト用テーマ<br>
+					baserCMS2012 テーマコンテスト 飲食店系テーマ賞受賞</p>
+				</div>
+				<img src="images/mainVisual_img_01.jpg" width="980" height="500" alt="">
+			</li>
+		</ul>
 	</section>
 
 	<section class="portfolioIndex">

@@ -363,6 +363,16 @@ a:hover { color: #996600; }
 	margin-bottom: 0;
 }
 
+#pageBody .mainVisual ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#pageBody .mainVisual ul li {
+	position: relative;
+}
+
 /* 「つくったもの」INDEX */
 #pageBody .portfolioIndex {
 	margin-top: 40px;
