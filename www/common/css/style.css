@@ -35,6 +35,28 @@ body {
   line-height: 5px;
 }
 
+/* ページボディ */
+#pageBody {
+  margin-top: 30px;
+}
+
+#pageBody:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBodyMain {
+  width: 720px;
+  float: left;
+}
+
+#pageBodySub {
+  width: 220px;
+  float: right;
+}
+
+
 p {
   font-size: 14px;
   line-height: 1.429;
@@ -88,6 +110,7 @@ figcaption {
   background-color: #F2F2E5;
   padding: 5px 15px;
   line-height: 1.231;
+  margin-top: 0;
 }
 
 .heading-typeA {
