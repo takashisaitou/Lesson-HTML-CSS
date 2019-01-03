@@ -3,14 +3,18 @@ p {
 }
 
 /* 見出し */
-h1 {
+.pageTitle {
   font-size: 26px;
 }
 
-h2 {
+.heading-typeA {
   font-size: 18px;
 }
 
-h3 {
+.heading-typeB {
   font-size: 16px;
+}
+
+.heading-typeC {
+  font-size: 14px;
 }
