@@ -6,6 +6,36 @@ p {
   font-size: 14px;
 }
 
+/* リスト */
+ul li {
+  font-size: 14px;
+  list-style-type: square;
+}
+
+/* 表 */
+table {
+  font-size: 14px;
+  border: 1px solid #CCCCCC;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+}
+
+table th {
+  background-color: #EEEEEE;
+  text-align: left;
+}
+
+table caption {
+  text-align: left;
+  font-weight: bold;
+}
+
 /* 見出し */
 .pageTitle {
   font-size: 26px;
