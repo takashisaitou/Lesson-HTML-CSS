@@ -92,6 +92,23 @@ a:hover {
   display: block;
 }
 
+/* ローカルナビ */
+#pageBodySub .localNavi ul {
+  margin: 0 0 30px;
+  padding-left: 0;
+}
+
+#pageBodySub .localNavi ul li {
+  font-size: 14px;
+  line-height: 1.429;
+  margin-bottom: 12px;
+  list-style-type: none;
+  background-image: url("../images/ico_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  padding-left: 10px;
+}
+
 
 /* ----- メインカラム内の装飾 ----- */
 
