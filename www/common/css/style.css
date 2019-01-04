@@ -4,6 +4,15 @@ body {
   color: #333333;
 }
 
+/* リンク */
+a {
+  color: #999966;
+}
+
+a:hover {
+  color: #996600;
+}
+
 /* ページ */
 #page {
   width: 980px;
