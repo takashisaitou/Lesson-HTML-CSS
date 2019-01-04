@@ -33,6 +33,52 @@ a:hover {
   margin-top: 5px;
 }
 
+/* グローバルナビ */
+#pageHead .globalNavi {
+  border: solid #CCCCCC;
+  border-width: 1px 0;
+  padding: 10px 0;
+}
+
+#pageHead .globalNavi ul {
+  margin: 0;
+  padding: 0;
+}
+
+#pageHead .globalNavi ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageHead .globalNavi ul li {
+  list-style: none;
+  width: 245px;
+  float: left;
+  border-left: solid 1px #CCCCCC;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.429;
+}
+
+#pageHead .globalNavi ul li:first-child {
+  border-left: none;
+}
+
+#pageHead .globalNavi ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+#pageHead .globalNavi ul li a:hover,
+#pageHead .globalNavi ul li.current a {
+  background-color: #F2F2E5;
+}
+
 /* ページフッター */
 #pageFoot {
   border-top: solid 1px #CCCCCC;
