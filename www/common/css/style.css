@@ -280,3 +280,50 @@ a:hover {
   font-size: 12px;
   line-height: 1.5;
 }
+
+/* ----- 「つくったもの」一覧ページ ----- */
+#pageBodyMain .articleList {
+  border: solid 1px #CCCCCC;
+  margin-bottom: 30px;
+}
+
+#pageBodyMain .articleList a {
+  display: block;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+#pageBodyMain .articleList a:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBodyMain .articleList a:hover {
+  opacity: 0.7;
+}
+
+#pageBodyMain .articleList a .articleListText {
+  width: 370px;
+  float: right;
+}
+
+#pageBodyMain .articleList a .articleListText h1 {
+  font-size: 26px;
+  line-height: 1.308;
+}
+
+#pageBodyMain .articleList a .articleListText p {
+  font-size: 14px;
+  line-height: 1.429;
+}
+
+#pageBodyMain .articleList a .articleListImage {
+  width: 300px;
+  float: left;
+}
+
+#pageBodyMain .articleList a .articleListImage img {
+  vertical-align: bottom;
+}
