@@ -289,6 +289,32 @@ a:hover {
   margin: 30px 0;
 }
 
+/* 「お問い合わせフォーム」ボタン */
+#pageBodyMain .btn {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 30px 0;
+  border-bottom: 1px dotted #CCCCCC;
+}
+
+#pageBodyMain .btn a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #058BA9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #92CDDB, #058BA9);
+  border: 1px solid #058BA9;
+  box-shadow: 1px 1px 0 #9DDDED inset;
+  text-shadow: 0px -1px 0 #333333;
+  display: inline-block;
+}
+
+#pageBodyMain .btn a:hover {
+  opacity: 0.7;
+}
 
 /* ----- 「つくったもの」一覧ページ ----- */
 #pageBodyMain .articleList {
