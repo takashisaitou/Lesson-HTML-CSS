@@ -281,6 +281,15 @@ a:hover {
   line-height: 1.5;
 }
 
+/* センター寄せ画像 */
+#pageBodyMain .imageCenter {
+  text-align: center;
+  border-bottom: 1px dotted #CCCCCC;
+  padding-bottom: 30px;
+  margin: 30px 0;
+}
+
+
 /* ----- 「つくったもの」一覧ページ ----- */
 #pageBodyMain .articleList {
   border: solid 1px #CCCCCC;
