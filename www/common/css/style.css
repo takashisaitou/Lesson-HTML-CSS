@@ -362,3 +362,37 @@ a:hover {
 #pageBodyMain .articleList a .articleListImage img {
   vertical-align: bottom;
 }
+
+/* ----- トップページの内容 ----- */
+/* メインビジュアル */
+#pageBody .mainVisual {
+  position: relative;
+}
+
+#pageBody .mainVisual img {
+  vertical-align: bottom;
+}
+
+#pageBody .mainVisual .mainVisualText {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 400px;
+  padding: 15px 25px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#pageBody .mainVisual .mainVisualText h1 {
+  font-size: 26px;
+  line-height: 1.231;
+  margin: 0;
+}
+
+#pageBody .mainVisual .mainVisualText p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
