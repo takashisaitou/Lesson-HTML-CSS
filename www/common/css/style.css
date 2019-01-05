@@ -276,6 +276,26 @@ a:hover {
   border: solid 1px #CCCCCC;
 }
 
+#pageBodyMain .creditUnit:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBodyMain .creditUnit .creditUnitText {
+  float: right;
+  width: 370px;
+}
+
+#pageBodyMain .creditUnit .creditUnitMap {
+  float: left;
+  width: 300px;
+}
+
+#pageBodyMain .creditUnit .creditUnitMap iframe {
+  vertical-align: bottom;
+}
+
 #pageBodyMain .creditUnit p {
   font-size: 12px;
   line-height: 1.5;
