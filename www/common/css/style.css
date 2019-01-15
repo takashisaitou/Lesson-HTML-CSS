@@ -29,3 +29,30 @@ p {
 .heading-typeC {
   font-size: 14px;
 }
+
+/* 区切り線・余白 */
+.articleDetailHead {
+  border-bottom: solid 1px #CCCCCC;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.articleDetailFoot {
+  border-top: solid 1px #CCCCCC;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.articleDetailBody section {
+  margin: 30px 0;
+}
+
+/* 撮影情報 */
+.creditUnit {
+  padding: 10px;
+  border: solid 1px #CCCCCC;
+}
+
+.creditUnit p {
+  font-size: 12px;
+}
