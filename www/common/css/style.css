@@ -19,6 +19,20 @@ a:hover {
   font-size: 12px;
 }
 
+/* ページの先頭へ戻る */
+.pagetop {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.pagetop a {
+  background-image: url("../images/ico_pagetop.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 10px;
+}
+
 /* ページ */
 #page {
   width: 980px;
