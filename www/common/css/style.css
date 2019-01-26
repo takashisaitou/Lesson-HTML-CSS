@@ -14,6 +14,11 @@ a:hover {
   color: #996600;
 }
 
+/* パンくずリスト */
+.topicPath {
+  font-size: 12px;
+}
+
 /* ページ */
 #page {
   width: 980px;
