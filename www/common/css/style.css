@@ -392,8 +392,40 @@ a:hover {
   margin: 0;
 }
 
-#pageBody .mainVisual .mainVisualText {
+#pageBody .mainVisual .mainVisualText p {
   font-size: 12px;
   line-height: 1.5;
   margin-bottom: 0;
+}
+
+/* 「つくったもの」INDEX */
+#pageBody .portfolioIndex {
+  margin-top: 40px;
+}
+
+#pageBody .portfolioIndex:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBody .portfolioIndex article {
+  width: 300px;
+  float: left;
+  margin-left: 40px;
+}
+
+#pageBody .portfolioIndex article:first-child {
+  margin-left: 0;
+}
+
+#pageBody .portfolioIndex article h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#pageBody .portfolioIndex article p {
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 1.5;
 }
