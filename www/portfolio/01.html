@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ページのタイトル</title>
-  <link rel="stylesheet" href="../common/css/style.css">
-</head>
-<body>
-  <article class="articleDetail">
-    <header class="articleDetailHead">
-      <h1 class="pageTitle">Cafe Debut</h1>
-      <p>CMS カフェサイト用テーマ<br>
-      baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（受賞結果はこちら）</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TIMER</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
 
-    <section class="articleDetailBody">
-      <h2 class="heading-typeA">いますぐ、はじめられるカフェサイトテーマ！</h2>
-      <p>baserCMSは、「コーポレートサイトにちょうどいい」をキャッチコピーにしたcake PHPベースの国産CMS。Cafe Debutは、baseCMSのテーマコンテスト2012に応募するために、チームこもりこましゃで作成しました。</p>
-      <p>baserCMSのインストールと、Cafe Debutテーマの初期設定を行ったら、あとはあなたのスマートフォンのInstagramで写真を撮っていくだけ。</p>
-      <p>Instagramのおしゃれ写真で、すぐに素敵なカフェサイトが出来上がっちゃうフォトログ風baserCMSテーマです。</p>
+      <p id="timer">00:00:00</p>
 
-      <table>
-        <caption>制作担当</caption>
-        <tr>
-          <th>コモモ</th>
-          <td>企画・デザイン・baserCMSテーマのベース組込み担当</td>
-        </tr>
-        <tr>
-          <th>モリコ</th>
-          <td>HTML/CSSコーディング担当</td>
-        </tr>
-        <tr>
-          <th>ひろましゃ</th>
-          <td>プラグイン制作、テーマ実装の難しいところとか担当</td>
-        </tr>
-      </table>
+      <div>
+        <button id="start_stop" class="btn btn-lg btn-primary">START</button>
+      </div>
 
-      <section>
-        <h3 class="heading-typeB">プラグインでInstagramと連携</h3>
-        <p>プラグインでInstagramと連携して、トップページにInstagramで撮影した写真がすぐに反映されます。</p>
-      </section>
+    </div>
 
-      <section>
-        <h3 class="heading-typeB">レスポンシブデザインでスマートフォン、タブレット表示も快適</h3>
-        <p>さまざまなデバイスの表示対応に、レスポンシブデザインを採用しました。Instagramでお店のメニューを撮影してすぐにスマートフォンで確認できるのも嬉しい♪</p>
-      </section>
+      <script>
 
-      <section>
-        <h3 class="heading-typeB">Webフォントだから、飾り文字やアイコンもキレイ</h3>
-        <p>サイトのタイトルやナビゲーション、主要な見出しはGoogle Web Font、アイコンはウェブフォント（Fontello）を採用しています。拡大縮小されるスマートフォンやタブレットでも解像度を気にすることなくキレイな文字とアイコン表示を実現できました。</p>
-      </section>
-    </section>
+        // ゼロを追加する。
+        var addZero = function(value) {
+          if (value < 10) {
+            value = '0' + value;
+          }
+          return value;
+        };
+        var start = new Date();
 
-    <footer class="articleDetailFoot">
-      <section>
-        <h2 class="heading-typeC">関連リンク</h2>
-        <ul>
-          <li>Cafe Debutのダウンロードページ</li>
-          <li>Cafe Debutのデモページ</li>
-          <li>baser CMS公式サイト</li>
-          <li>Instagram公式サイト</li>
-        </ul>
-      </section>
+        var timer_id;
+        document.getElementById('start_stop').addEventListener('click', function() {
+          // var now = new Date();
+          // var seconds = now.getSeconds();
+          // seconds = addZero(seconds);
+          // // ここから追加変更。
+          // var minutes = now.getMinutes();
+          // minutes = addZero(minutes);
 
-      <aside class="creditUnit">
-        <p>撮影協力</p>
-        <h2 class="heading-typeC">kitchen nest</h2>
-        <p>北海道札幌市中央区南３条西８丁目 大洋ビル２階</p>
-        <ul>
-          <li>http://www.nest-kitchen.jp</li>
-          <li>Facebookページ</li>
-        </ul>
-        <p>Cafe Debutテーマのイメージ撮影にご協力いただきました。とっても素敵なお店です。</p>
-      </aside>
-    </footer>
+          // var hours = now.getHours();
+          // hours = addZero(hours);
 
-  </article>
-</body>
+          // document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+          // var start = new Date();
+          // document.getElementById('timer').innerHTML = start.getTime();
+          // var start = new Date();
+
+          // setInterval(goTimer, 10);
+
+
+
+          if (this.innerHTML === 'START') {
+            timer_id = setInterval(goTimer, 10);
+            this.innerHTML = 'STOP';
+            this.classList.remove('btn-default');
+            this.classList.add('btn-danger');
+          } else {
+            clearInterval(timer_id);
+            this.innerHTML = 'START';
+            this.classList.remove('btn-danger');
+            this.classList.add('btn-dafault');
+          }
+        });
+
+        // タイマーの処理
+        var goTimer = function() {
+          var now = new Date();
+
+          var milli = now.getTime() - start.getTime();
+          var seconds = Math.floor(milli / 1000);
+          var minutes = Math.floor(seconds / 60);
+          var hours = Math.floor(minutes / 60);
+
+          seconds = seconds - minutes * 60;
+          minutes = minutes - hours * 60;
+
+          hours = addZero(hours);
+          seconds = addZero(seconds);
+          minutes = addZero(minutes);
+
+          document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+        }
+      </script>
+  </body>
 </html>
