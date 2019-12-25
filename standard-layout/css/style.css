@@ -95,20 +95,87 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
 }
 
+.hot-topic {
+  display: block;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+}
+
+.hot-topic:hover {
+  opacity: 0.85;
+}
+
+.hot-topic .image {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.hot-topic .content {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 105px 25px 0;
+  background-color: #2d3d54;
+  line-height: 1.6;
+}
+
+.hot-topic .title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.0rem;
+}
+
+.hot-topic .desc {
+  color: #ddc;
+}
+
+.hot-topic .date {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 140px;
+  padding: 4px;
+  background-color: #fff;
+  color: #2d3d54;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.heading {
+  padding: 10px 12px;
+  background: url('../images/bg-slash.gif');
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+.scroll-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
 
 /* --------------------------------
  * wrapper
  * -------------------------------- */
-.wrapper {
+/* .wrapper {
   width: 970px;
   margin: 30px auto 40px;
-}
+} */
 
 
 /* --------------------------------
  * main
  * -------------------------------- */
-.main {
+/* .main {
   display: block;
   float: left;
   width: 660px;
@@ -260,13 +327,13 @@ a:link, a:visited, a:hover, a:active {
   top: 0;
   left: 0;
   width: 100%;
-}
+} */
 
 
 /* --------------------------------
  * sidemenu
  * -------------------------------- */
-.sidemenu {
+/* .sidemenu {
   float: right;
   width: 275px;
 }
@@ -391,13 +458,13 @@ a:link, a:visited, a:hover, a:active {
 }
 .search-box .text {
   margin-top: 12px;
-}
+} */
 
 
 /* --------------------------------
  * footer
  * -------------------------------- */
-.footer {
+/* .footer {
   width: 100%;
   padding: 20px 0 30px;
   background: #2d3d54 url('../images/bg-footer.gif');
@@ -430,7 +497,7 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 30px;
   text-align: center;
   letter-spacing: 1px;
-}
+} */
 
 
 /* --------------------------------
